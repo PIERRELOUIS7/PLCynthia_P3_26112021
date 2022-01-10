@@ -1,0 +1,1298 @@
+@charset "UTF-8";
+/******************Polices d'écriture*******************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/**********************Variables************************/
+body {
+  margin: 0;
+  background-color: #e9e9e9;
+}
+
+/*Principal couleur*/
+.decoration {
+  background-color: #e9e9e9;
+}
+
+/****************************\
+      transition: coeur
+\****************************/
+/*div des 2 icônes coeur de la page d'accueil*/
+.heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  /*Icône de coeur remplit*/
+  /*Icône de coeur vide*/
+}
+
+.heart .fas.fa-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  color: white;
+  font-size: 17px;
+  top: 1px;
+  right: 2px;
+  bottom: 0;
+}
+
+.heart .far.fa-heart {
+  position: absolute;
+  font-size: 21px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/*div des icônes coeur des pages menus*/
+.menu-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  /*Icône de coeur vide*/
+  /*Icône de coeur remplit*/
+}
+
+.menu-heart .far.fa-heart {
+  position: absolute;
+  font-size: 21px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu-heart .fas.fa-heart {
+  position: relative;
+  color: #e9e9e9;
+  font-size: 17px;
+  top: 1px;
+  right: 2px;
+  bottom: 0;
+}
+
+/*Transition de l'icône coeur au survol ou au clic de la souris*/
+.heart:hover > .fas.fa-heart {
+  -webkit-animation: heart-fill .7s linear;
+          animation: heart-fill .7s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.heart:active > .fas.fa-heart {
+  color: #FF79DA;
+}
+
+/*Transition des icônes coeur des pages menu*/
+.menu-heart:hover > .fas.fa-heart {
+  -webkit-animation: heart-fill .7s linear;
+          animation: heart-fill .7s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.menu-heart:active > .fas.fa-heart {
+  color: #FF79DA;
+}
+
+/*Keyframes des icônes coeur*/
+@-webkit-keyframes heart-fill {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    color: #FF79DA;
+    opacity: .4;
+  }
+  55% {
+    -webkit-transform: scale(55%);
+            transform: scale(55%);
+    color: #FF79DA;
+    opacity: .7;
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+    color: #FF79DA;
+    opacity: 1;
+  }
+}
+@keyframes heart-fill {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    color: #FF79DA;
+    opacity: .4;
+  }
+  55% {
+    -webkit-transform: scale(55%);
+            transform: scale(55%);
+    color: #FF79DA;
+    opacity: .7;
+  }
+  100% {
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
+    color: #FF79DA;
+    opacity: 1;
+  }
+}
+
+/**************************************************************Accueil********************************************************/
+/********
+Le header
+********/
+/*****************************************\
+      transition: loading spinner
+\*****************************************/
+/*Loader du la page d'accueil*/
+.loading {
+  -webkit-animation: hide 4s linear;
+          animation: hide 4s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.loading .loader {
+  margin: auto;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.loading .circle {
+  border-radius: 50%;
+  border: 15px solid #fff;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.loading .circle:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border: 15px solid transparent;
+  border-radius: 50%;
+  border-top-color: #9356DC;
+  opacity: 0.6;
+  -webkit-animation: spin 1s linear 0s infinite;
+          animation: spin 1s linear 0s infinite;
+}
+
+.loading .circle:before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 8px solid transparent;
+  border-radius: 50%;
+  border-top-color: #ff9ff3;
+  opacity: 0.6;
+  -webkit-animation: spin .6s linear 0s infinite;
+          animation: spin .6s linear 0s infinite;
+}
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+.feuille {
+  color: black;
+  -webkit-animation: visible 6s linear -.6s;
+          animation: visible 6s linear -.6s;
+  opacity: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes visible {
+  0% {
+    opacity: 0;
+    overflow: hidden;
+  }
+  50% {
+    opacity: 0;
+    overflow: hidden;
+  }
+  75% {
+    opacity: 0;
+    overflow: hidden;
+  }
+  90% {
+    opacity: .8;
+    overflow: visible;
+  }
+  100% {
+    opacity: 1;
+    overflow: visible;
+  }
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+    overflow: hidden;
+  }
+  50% {
+    opacity: 0;
+    overflow: hidden;
+  }
+  75% {
+    opacity: 0;
+    overflow: hidden;
+  }
+  90% {
+    opacity: .8;
+    overflow: visible;
+  }
+  100% {
+    opacity: 1;
+    overflow: visible;
+  }
+}
+
+/********************************************/
+/*** 598px*****/
+/****Le logo****/
+/*La balise qui englobe l'image du logo*/
+.logo_ohm {
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  /*L'image du logo*/
+}
+
+.logo_ohm .image-ohm {
+  max-width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 8px 0 9px 0;
+}
+
+/*formulaire*/
+.formulaire {
+  cursor: pointer;
+}
+
+.formulaire .barre-grise {
+  background-color: #c9cbcd;
+  height: 3px;
+}
+
+.formulaire form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 35px;
+  width: 100%;
+  background-color: #d4d5d6;
+}
+
+.formulaire form:focus {
+  border-style: none;
+}
+
+.formulaire form .country {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  border: none 1px #e9e9e9;
+  background-color: #e9e9e9;
+  text-align: center;
+  background-color: #d4d5d6;
+  cursor: pointer;
+  width: 100%;
+}
+
+.formulaire form .country:active {
+  border-style: none;
+  background-color: #dfdfdf;
+}
+
+.formulaire form .country:hover {
+  background-color: #dfdfdf;
+}
+
+.formulaire form .fa-map-marker-alt {
+  font-size: 12px;
+  position: absolute;
+  left: 32%;
+  top: 10px;
+}
+
+.formulaire form .fa-map-marker-alt:active {
+  border-style: none;
+  background-color: #dfdfdf;
+}
+
+.formulaire form .fa-map-marker-alt:hover {
+  background-color: #dfdfdf;
+}
+
+/****Le titre et le texte****/
+/*Le h2 et p du header*/
+.presentation-txt {
+  text-align: center;
+  /*Le h2 du header*/
+  /*Le p du header*/
+}
+
+.presentation-txt h2 {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.presentation-txt p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/****Le bouton****/
+/*Le 1er bouton du header*/
+.button-rechearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 47px;
+  /*Le bouton à l'intérieur de la class button-header*/
+}
+
+.button-rechearch span {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.button-rechearch button {
+  padding: 12px 22px 12px 22px;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-shadow: 5px 5px 5px #A6A6A9;
+          box-shadow: 5px 5px 5px #A6A6A9;
+  border: white 2px none;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.button-rechearch button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeb6de), to(#b089e0));
+  background: linear-gradient(to bottom, #eeb6de, #b089e0);
+  -webkit-box-shadow: 5px 5px 5px #B5B6B9;
+          box-shadow: 5px 5px 5px #B5B6B9;
+}
+
+/********
+Le contenu : les grands blocs
+********/
+/****La section Fonctionnement****/
+/*Couleur de fond de la section Fonctionnement*/
+.appearance-color {
+  background-color: white;
+  /*Titre de la section Fonctionnement*/
+}
+
+.appearance-color .intitulé-fonctionnement {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 40px;
+  padding-bottom: 23px;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+/*La div des 3 boutons de la section Fonctionnement*/
+.fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 270px;
+  /*Le boutons de la section Fonctionnement x3*/
+}
+
+.fonctionnement .bloc-fonctionnement {
+  margin: 0 20px 20px 20px;
+  border-radius: 18px;
+  padding: 21px 0 21px 0;
+  -webkit-box-shadow: 5px 5px 15px #cdcdcf;
+          box-shadow: 5px 5px 15px #cdcdcf;
+  background-color: #E6E7E9;
+  cursor: pointer;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  /*Le texte du bouton*/
+  /*Le chiffre*/
+  /*icône d'un téléphone*/
+  /*icône d'une liste*/
+  /*icône d'une boutique*/
+}
+
+.fonctionnement .bloc-fonctionnement span {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.fonctionnement .bloc-fonctionnement:hover {
+  color: linear-gradient(to bottom, #ff79da, #9356dc);
+}
+
+.fonctionnement .bloc-fonctionnement strong {
+  background-color: blueviolet;
+  color: white;
+  border: blueviolet 1px none;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  -webkit-transform: translate(-49%, -13%);
+          transform: translate(-49%, -13%);
+  font-weight: normal;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fonctionnement .bloc-fonctionnement .fa-mobile-alt {
+  padding-right: 20px;
+  padding-left: 30px;
+  font-size: 15px;
+  color: gray;
+}
+
+.fonctionnement .bloc-fonctionnement .fa-list-ul {
+  padding-right: 20px;
+  padding-left: 30px;
+  font-size: 15px;
+  color: gray;
+}
+
+.fonctionnement .bloc-fonctionnement .fa-store {
+  padding-right: 20px;
+  padding-left: 30px;
+  font-size: 12px;
+  color: blueviolet;
+}
+
+.fonctionnement .bloc-fonctionnement:hover {
+  background-color: rgba(236, 237, 238, 0.6);
+  -webkit-box-shadow: 5px 5px 5px #E6E7E9;
+          box-shadow: 5px 5px 5px #E6E7E9;
+}
+
+/*Englobe l'icône et le texte des boutons dans functioning*/
+.align-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/****La section Restaurants****/
+/*la partie Restaurants*/
+.restaurant {
+  background-color: #e9e9e9;
+  /*Le titre de la section Restaurant*/
+  /*Englobe tous les liens "bloc-restaurant*/
+}
+
+.restaurant .restaurant-title {
+  font-weight: bold;
+  padding: 45px 20px 15px 20px;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.restaurant .link-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*les liens "bloc-restaurant" qui présentent chaque menu*/
+}
+
+.restaurant .link-restaurant a.bloc-restaurant {
+  position: relative;
+  text-decoration: none;
+}
+
+/*Une div : l'image, le h3, le texte, le flottant et les logo x4*/
+.bloc-restaurant {
+  margin: 0 0 14px 0;
+  -webkit-box-shadow: 15px 15px 20px #CCCDD0;
+          box-shadow: 15px 15px 20px #CCCDD0;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+  border: white 2px none;
+  background-color: white;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /*Texte "Nouveau*/
+  /*L'image de la div x4*/
+  /*Le titre h3, texte et les icônes des coeurs*/
+}
+
+.bloc-restaurant .new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: #99E2D0 2px none;
+  background-color: #99E2D0;
+  color: forestgreen;
+  padding: 6px 11px 6px 11px;
+  font-weight: bold;
+  font-size: 10px;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+}
+
+.bloc-restaurant img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 140px;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bloc-restaurant .restaurant-texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*Le titre h3 et le p*/
+}
+
+.bloc-restaurant .restaurant-texte .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bloc-restaurant .restaurant-texte .text h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  padding: 13px 10px 3px 10px;
+  margin: 0;
+}
+
+.bloc-restaurant .restaurant-texte .text p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  padding: 0 10px 12px 10px;
+}
+
+/******************************************************** Les menus ***********************************************************/
+/********
+Le header
+********/
+/*Le header des page menu*/
+header {
+  position: relative;
+}
+
+/*Le logo et l'icône des pages menu*/
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 8px 0 12px 0;
+  -webkit-animation: body-menus 3s linear -.8s infinite;
+          animation: body-menus 3s linear -.8s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  /*L'image du logo*/
+  /*Le bouton qui englobe le lien et l'icône d'une flèche*/
+}
+
+.logo .logo-menus {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+}
+
+.logo a {
+  color: #030303;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo a .button {
+  /*Icône d'une flèche*/
+  border: white none 1px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.logo a .button .fa-arrow-left {
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  left: 10px;
+  top: 9px;
+}
+
+.logo a .button .fa-arrow-left:hover {
+  color: blueviolet;
+}
+
+@-webkit-keyframes body-menus {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes body-menus {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+/********
+Le contenu : les grands blocs
+********/
+/*****************************************************\
+      transition: apparition des plats différée
+\*****************************************************/
+.plate-entrees {
+  -webkit-animation: bloc .5s ease-out;
+          animation: bloc .5s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.plate-meals {
+  -webkit-animation: bloc .7s ease-out 1200ms;
+          animation: bloc .7s ease-out 1200ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.plate-desserts {
+  -webkit-animation: bloc .7s ease-out 2100ms;
+          animation: bloc .7s ease-out 2100ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes bloc {
+  0% {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bloc {
+  0% {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+a.act-one {
+  -webkit-animation: advent .6s linear;
+          animation: advent .6s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+a.act-two {
+  -webkit-animation: advent .6s linear .6s;
+          animation: advent .6s linear .6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+a.act-three {
+  -webkit-animation: advent .6s linear 900ms;
+          animation: advent .6s linear 900ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+a.act-four {
+  -webkit-animation: advent .6s linear 1100ms;
+          animation: advent .6s linear 1100ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+a.act-five {
+  -webkit-animation: advent .6s linear 1500ms;
+          animation: advent .6s linear 1500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+a.act-six {
+  -webkit-animation: advent .6s linear 1800ms;
+          animation: advent .6s linear 1800ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+a.act-seven {
+  -webkit-animation: advent .6s linear 2100ms;
+          animation: advent .6s linear 2100ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+a.act-eight {
+  -webkit-animation: advent .6s linear 2500ms;
+          animation: advent .6s linear 2500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+a.act-nine {
+  -webkit-animation: advent .6s linear 3000ms;
+          animation: advent .6s linear 3000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+a.act-ten {
+  -webkit-animation: advent .6s linear 3400ms;
+          animation: advent .6s linear 3400ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes advent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes advent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*******************************************************/
+/*Image spécifique au menu proposé*/
+.img-resto-menu {
+  width: 100%;
+  max-height: 450px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*Du titre au bouton "commander"*/
+.resto {
+  border-radius: 33px 33px 0 0;
+  background-color: #e9e9e9;
+  position: relative;
+  bottom: 23px;
+  /*Titre du menu et icônes de coeur*/
+}
+
+.resto .menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resto .menus h2 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Shrikhand", cursif;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.resto h3 {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 25px 20px 11px 20px;
+  border-bottom: 3px #99E2D0 solid;
+  font-family: "Roboto", sans-serif;
+  width: 32px;
+  padding-bottom: 4px;
+}
+
+h4 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 6px 9px 3px 9px;
+}
+
+/*Englobe la transition et les liens des plats proposés*/
+.card .plate-entrees a, .card .plate-meals a, .card .plate-desserts a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-right: 50px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin: 10px;
+  border-radius: 11px;
+  -webkit-box-shadow: 15px 15px 20px #CCCDD0;
+          box-shadow: 15px 15px 20px #CCCDD0;
+  border: none 2px white;
+  background-color: white;
+  cursor: pointer;
+}
+
+.card .plate-entrees a:hover, .card .plate-meals a:hover, .card .plate-desserts a:hover {
+  padding-right: 100px;
+}
+
+.card .plate-entrees a:hover .right, .card .plate-meals a:hover .right, .card .plate-desserts a:hover .right {
+  right: 0;
+}
+
+.card .plate-entrees p, .card .plate-meals p, .card .plate-desserts p {
+  font-size: 12px;
+  padding: 0 10px 7px 10px;
+  margin: 0;
+}
+
+a .left p, a .left h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+a .right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a .right div {
+  width: 50px;
+  text-align: center;
+}
+
+a .following {
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 11px 11px 0;
+  position: absolute;
+}
+
+/*Tarif*/
+a .second_price span {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: black;
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+a .following i {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a:hover .second_price {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+a:hover .following i {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+/*p en gras sur la page "A la française"*/
+.txt-bold {
+  font-weight: bold;
+}
+
+/*icône check*/
+.fa-check-circle {
+  color: white;
+  font-size: 20px;
+}
+
+/*******************************************************/
+/****Le bouton Commander****/
+/*Englobe le bouton et la span Commander*/
+.order-fr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+}
+
+.order-fr button {
+  border-radius: 50px;
+  padding: 13px 37px 13px 37px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  cursor: pointer;
+  border: white 2px none;
+  -webkit-box-shadow: 5px 5px 5px #A6A6A9;
+          box-shadow: 5px 5px 5px #A6A6A9;
+  opacity: 0.7;
+  /*Texte*/
+}
+
+.order-fr button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeb6de), to(#b089e0));
+  background: linear-gradient(to bottom, #eeb6de, #b089e0);
+  -webkit-box-shadow: 5px 5px 5px #B5B6B9;
+          box-shadow: 5px 5px 5px #B5B6B9;
+}
+
+.order-fr button span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+/**************************************** Page menu : note *****************************************/
+/*Hauteur de l'image de la page menu note*/
+.img-note {
+  max-height: 600px;
+}
+
+/********************************** Le footer sur toutes les pages ********************************/
+footer {
+  background-color: #313339;
+  color: white;
+  margin-top: 40px;
+  /*Le nom du site*/
+  /*La liste de la nav du footer*/
+}
+
+footer h1 {
+  color: white;
+  padding: 15px 20px 12px 20px;
+  font-family: "Shrikhand", cursif;
+  font-style: italic;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0;
+}
+
+footer .list-footer {
+  list-style: none;
+  line-height: 22px;
+  margin: 0;
+  padding: 0 20px 25px 20px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  /*Les li*/
+}
+
+footer .list-footer .list-bold {
+  font-weight: normal;
+  /*icône des couverts*/
+  /*icône des mains*/
+}
+
+footer .list-footer .list-bold .fa-utensils {
+  padding-right: 10px;
+  font-size: 9px;
+}
+
+footer .list-footer .list-bold .fa-hands-helping {
+  padding-right: 10px;
+  font-size: 8px;
+}
+
+/*Les liens du footer*/
+.list-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.list-footer a:hover {
+  color: blueviolet;
+}
+/*# sourceMappingURL=style.css.map */
