@@ -1,0 +1,1084 @@
+@media screen and (min-width: 400px) {
+
+    /********************** Le logo : 400px *********************/
+
+    .logo-acc {
+        .image-omf {
+            padding: 8px 0 12px 0;
+        }
+    }
+
+    /******************** Localisation : 400px **********************/
+
+    .form {
+        form {
+            height: 45px;
+
+            .country {
+                font-size: 14px;
+            }
+
+            .fa-map-marker-alt {
+                font-size: 14px;
+                top: 14px;
+            }
+        }
+    }
+
+    /********************** Le texte du header : 400px *********************/
+
+    .header-txt {
+        h2 {
+            font-size: 23px;
+            padding-top: 35px;
+            padding-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    /******************** Le bouton du header : 400px **********************/
+
+    .button-header {
+        padding-bottom: 50px;
+
+        span {
+            font-size: 15px;
+        }
+
+        button {
+            padding: 15px 22px 15px 22px;
+        }
+    }
+
+    /********************* Fonctionnement : 400px ***********************/
+
+    .color-functioning {
+        .functioning-title {
+            padding-top: 45px;
+            padding-bottom: 25px;
+            font-size: 21px;
+        }
+    }
+
+    .functioning {
+        min-height: 310px;
+
+        .elements-functioning {
+            margin: 0 20px 22px 20px;
+            padding: 25px 0 25px 0;
+            justify-content: flex-start;
+
+            span {
+                font-size: 14px;
+            }
+
+            strong {
+                padding: 3px;
+                font-size: 13px;
+                width: 16px;
+                height: 16px;
+            }
+
+            .fa-mobile-alt {
+                padding-left: 0;
+                font-size: 17px;
+            }
+
+            .fa-list-ul {
+                padding-left: 0;
+                font-size: 16px;
+            }
+
+            .fa-store {
+                padding-left: 0;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .align-button {
+        justify-content: center;
+    }
+
+    /***************** Restaurants : 400px *******************/
+    @at-root .restaurant {
+        .restaurant-title {
+            padding: 45px 20px 20px 20px;
+            font-size: 21px;
+        }
+    }
+
+    .bloc-restaurant {
+        margin: 0 0 16px 0;
+        border-radius: 17px;
+
+        .float-new {
+            top: 12px;
+            right: 12px;
+            padding: 8px 13px 8px 13px;
+            font-size: 12px;
+        }
+
+        img {
+            height: 180px;
+            border-radius: 17px 17px 0 0;
+        }
+
+        .restaurant-text {
+            .txt {
+                h3 {
+                    font-size: 17px;
+                    padding: 15px 12px 5px 12px;
+                }
+
+                p {
+                    font-size: 16px;
+                    padding: 0 12px 15px 12px;
+                }
+            }
+        }
+    }
+
+    /***************** Les icônes coeur : 400px ******************/
+
+    .heart {
+        padding-right: 25px;
+        padding-left: 25px;
+
+        .fas.fa-heart {
+            font-size: 18px;
+        }
+    }
+
+    /***************** Le footer : 400px ********************/
+
+    footer {
+        h1 {
+            padding: 20px 23px 15px 23px;
+            font-size: 17px;
+        }
+
+        .list-footer {
+            line-height: 25px;
+            padding: 0 20px 30px 20px;
+            font-size: 14px;
+            letter-spacing: normal;
+
+            .list-bold {
+                .fa-utensils {
+                    font-size: 10px;
+                }
+
+                .fa-hands-helping {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    /******************** Localisation : 500px **********************/
+
+    .form {
+        form {
+            .country {
+                font-size: 15px;
+            }
+
+            .fa-map-marker-alt {
+                font-size: 15px;
+            }
+        }
+    }
+
+    /********************** Le texte du header : 500px *********************/
+    .header-txt {
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 19px;
+        }
+    }
+
+    /******************** Le bouton du header : 500px **********************/
+    .button-header {
+        span {
+            font-size: 17px;
+        }
+
+        button {
+            padding: 17px 24px 17px 24px;
+        }
+    }
+
+    /********************* Fonctionnement : 500px ***********************/
+    .color-functioning {
+        .functioning-title {
+            font-size: 23px;
+        }
+    }
+
+    .functioning {
+        min-height: 350px;
+
+        .elements-functioning {
+            margin: 0 20px 25px 20px;
+            padding: 28px 0 28px 0;
+
+            span {
+                font-size: 17px;
+            }
+
+            strong {
+                padding: 5px;
+                font-size: 15px;
+            }
+
+            .fa-mobile-alt {
+                font-size: 19px;
+            }
+
+            .fa-list-ul {
+                font-size: 18px;
+            }
+
+            .fa-store {
+                font-size: 17px;
+            }
+        }
+    }
+
+    /***************** Restaurants : 500px *******************/
+    @at-root .restaurant {
+        .restaurant-title {
+            padding: 50px 20px 20px 25px;
+            font-size: 23px;
+        }
+    }
+
+    .bloc-restaurant {
+        margin: 0 0 20px 0;
+
+        .float-new {
+            top: 14px;
+            right: 14px;
+            padding: 9px 14px 9px 14px;
+            font-size: 14px;
+        }
+
+        img {
+            height: 230px;
+        }
+
+        .restaurant-text {
+            .txt {
+                h3 {
+                    font-size: 19px;
+                    padding: 17px 15px 5px 15px;
+                }
+
+                p {
+                    font-size: 18px;
+                    padding: 0 15px 17px 15px;
+                }
+            }
+        }
+    }
+
+    /*************** Les icônes coeur : 500px *****************/
+
+    .heart {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    /***************** Le footer : 500px ********************/
+
+    footer {
+        h1 {
+            font-size: 19px;
+        }
+
+        .list-footer {
+            padding: 0 25px 35px 25px;
+            font-size: 16px;
+
+            .list-bold {
+                .fa-utensils {
+                    font-size: 12px;
+                }
+
+                .fa-hands-helping {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+
+    /********************** Le logo : 650px *********************/
+    .logo-acc {
+        .image-omf {
+            padding: 13px 0 18px 0;
+        }
+    }
+
+    /******************** Localisation : 650px **********************/
+
+    .form {
+        form {
+            .fa-map-marker-alt {
+                left: 38%;
+            }
+        }
+    }
+
+    /********************** Le texte du header : 650px *********************/
+    .header-txt {
+        h2 {
+            font-size: 26px;
+            padding-top: 35px;
+            padding-bottom: 15px;
+        }
+
+        p {
+            font-size: 21px;
+            padding-bottom: 30px;
+        }
+    }
+
+    /******************** Le bouton du header : 650px **********************/
+    .button-header {
+        padding-bottom: 55px;
+
+        span {
+            font-size: 20px;
+        }
+
+        button {
+            padding: 19px 25px 19px 25px;
+        }
+    }
+
+    /********************* Fonctionnement : 650px ***********************/
+    .color-functioning {
+        .functioning-title {
+            font-size: 26px;
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .functioning {
+        min-height: 410px;
+
+        .elements-functioning {
+            margin: 0 20px 30px 20px;
+            padding: 33px 0 33px 0;
+            border-radius: 30px;
+
+            span {
+                font-size: 20px;
+            }
+
+            strong {
+                padding: 7px;
+                font-size: 18px;
+            }
+
+            .fa-mobile-alt {
+                font-size: 23px;
+                padding-right: 40px;
+            }
+
+            .fa-list-ul {
+                font-size: 22px;
+                padding-right: 40px;
+            }
+
+            .fa-store {
+                font-size: 21px;
+                padding-right: 40px;
+            }
+        }
+    }
+
+    /***************** Restaurants : 650px *******************/
+    @at-root .restaurant {
+        .restaurant-title {
+            padding: 50px 20px 25px 20px;
+            font-size: 26px;
+        }
+
+        .links-restaurant {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .bloc-restaurant {
+        margin: 0 0 25px 0;
+        border-radius: 20px;
+
+        .float-new {
+            top: 17px;
+            right: 17px;
+            padding: 9px 17px 9px 17px;
+            font-size: 18px;
+        }
+
+        img {
+            height: 270px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .restaurant-text {
+            .txt {
+                h3 {
+                    font-size: 23px;
+                    padding: 20px 18px 5px 18px;
+                }
+
+                p {
+                    font-size: 22px;
+                    padding: 0 18px 20px 18px;
+                }
+            }
+        }
+    }
+
+    /***************** Les icônes coeur : 650px *******************/
+
+    .heart {
+        .fas.fa-heart {
+            font-size: 22px;
+            top: 2px;
+        }
+
+        .far.fa-heart {
+            font-size: 26px;
+        }
+    }
+
+    /***************** Le footer : 650px ********************/
+
+    footer {
+        margin-top: 60px;
+
+        h1 {
+            padding: 30px 30px 20px 30px;
+            font-size: 24px;
+        }
+
+        .list-footer {
+            padding: 0 30px 50px 30px;
+            font-size: 20px;
+            line-height: 35px;
+
+            .list-bold {
+                .fa-utensils {
+                    padding-right: 15px;
+                    font-size: 16px;
+                }
+
+                .fa-hands-helping {
+                    padding-right: 15px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+
+    /********************** Le logo : 750px *********************/
+    .logo-acc {
+        .image-omf {
+            max-width: 270px;
+        }
+    }
+
+    /******************** Localisation : 750px **********************/
+
+    .form {
+        .bar-grey {
+            height: 5px;
+        }
+
+        form {
+            height: 55px;
+
+            .country {
+                font-size: 19px;
+            }
+
+            .fa-map-marker-alt {
+                font-size: 19px;
+                top: 16px;
+            }
+        }
+    }
+
+    /********************** Le texte du header : 750px *********************/
+    .header-txt {
+        h2 {
+            font-size: 31px;
+            padding-top: 50px;
+            padding-bottom: 25px;
+        }
+
+        p {
+            font-size: 24px;
+            padding-bottom: 40px;
+        }
+    }
+
+    /******************** Le bouton du header : 750px **********************/
+    .button-header {
+        padding-bottom: 55px;
+
+        span {
+            font-size: 21px;
+        }
+
+        button {
+            padding: 23px 30px 23px 30px;
+        }
+    }
+
+    /********************* Fonctionnement : 750px ***********************/
+    .color-functioning {
+        .functioning-title {
+            font-size: 31px;
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    }
+
+    .functioning {
+        min-height: 490px;
+
+        .elements-functioning {
+            margin: 0 25px 35px 25px;
+            padding: 38px 0 38px 0;
+            border-radius: 35px;
+
+            span {
+                font-size: 25px;
+            }
+
+            strong {
+                padding: 10px;
+                font-size: 23px;
+            }
+
+            .fa-mobile-alt {
+                font-size: 25px;
+                padding-right: 40px;
+            }
+
+            .fa-list-ul {
+                font-size: 24px;
+                padding-right: 40px;
+            }
+
+            .fa-store {
+                font-size: 23px;
+                padding-right: 40px;
+            }
+        }
+    }
+
+    /***************** Restaurants : 750px *******************/
+    @at-root .restaurant {
+        .restaurant-title {
+            padding: 60px 25px 30px 25px;
+            font-size: 31px;
+        }
+
+        .links-restaurant {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
+    .bloc-restaurant {
+        margin: 0 0 30px 0;
+        border-radius: 25px;
+
+        .float-new {
+            top: 20px;
+            right: 20px;
+            padding: 9px 17px 9px 17px;
+            font-size: 23px;
+        }
+
+        img {
+            height: 340px;
+            border-radius: 25px 25px 0 0;
+        }
+
+        .restaurant-text {
+            .txt {
+                h3 {
+                    font-size: 28px;
+                    padding: 30px 25px 10px 25px;
+                }
+
+                p {
+                    font-size: 27px;
+                    padding: 0 25px 30px 25px;
+                }
+            }
+        }
+    }
+
+    /***************** Les icônes coeur : 750px *******************/
+
+    .heart {
+        padding-right: 40px;
+        padding-left: 40px;
+
+        .fas.fa-heart {
+            font-size: 27px;
+            top: 1px;
+        }
+
+        .far.fa-heart {
+            font-size: 31px;
+        }
+    }
+
+    /***************** Le footer : 750px ********************/
+
+    footer {
+        margin-top: 70px;
+
+        h1 {
+            padding: 40px 40px 30px 40px;
+            font-size: 29px;
+        }
+
+        .list-footer {
+            padding: 0 40px 70px 40px;
+            font-size: 25px;
+            line-height: 40px;
+
+            .list-bold {
+                .fa-utensils {
+                    padding-right: 20px;
+                    font-size: 21px;
+                }
+
+                .fa-hands-helping {
+                    padding-right: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    /******************** Localisation : 1000px **********************/
+
+    .form {
+        .bar-grey {
+            height: 7px;
+        }
+
+        form {
+            height: 65px;
+
+            .country {
+                font-size: 23px;
+            }
+
+            .fa-map-marker-alt {
+                font-size: 23px;
+                top: 18px;
+            }
+        }
+    }
+
+    /********************** Le texte du header : 1000px *********************/
+    .header-txt {
+        h2 {
+            font-size: 38px;
+            padding-top: 55px;
+            padding-bottom: 30px;
+        }
+
+        p {
+            font-size: 32px;
+            padding-bottom: 45px;
+        }
+    }
+
+    /******************** Le bouton du header : 1000px **********************/
+    .button-header {
+        padding-bottom: 70px;
+
+        span {
+            font-size: 28px;
+        }
+
+        button {
+            padding: 27px 38px 27px 38px;
+        }
+    }
+
+    /********************* Fonctionnement : 1000px ***********************/
+    .color-functioning {
+        .functioning-title {
+            font-size: 36px;
+            padding-top: 70px;
+            padding-bottom: 45px;
+        }
+    }
+
+    .functioning {
+        min-height: 550px;
+
+        .elements-functioning {
+            margin: 0 30px 40px 30px;
+            padding: 42px 0 42px 0;
+            border-radius: 38px;
+
+            span {
+                font-size: 28px;
+            }
+
+            strong {
+                padding: 12px;
+                font-size: 26px;
+            }
+
+            .fa-mobile-alt {
+                font-size: 28px;
+            }
+
+            .fa-list-ul {
+                font-size: 27px;
+            }
+
+            .fa-store {
+                font-size: 26px;
+            }
+        }
+    }
+
+    /***************** Restaurants : 1000px *******************/
+    @at-root .restaurant {
+        .restaurant-title {
+            padding: 70px 30px 35px 30px;
+            font-size: 36px;
+        }
+
+        .links-restaurant {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+    .bloc-restaurant {
+        margin: 0 0 35px 0;
+
+        .float-new {
+            padding: 10px 18px 10px 18px;
+            font-size: 28px;
+        }
+
+        img {
+            height: 370px;
+        }
+
+        .restaurant-text {
+            .txt {
+                h3 {
+                    font-size: 33px;
+                }
+
+                p {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    /************** Les icônes coeur : 1000px ******************/
+
+    .heart {
+        .fas.fa-heart {
+            font-size: 32px;
+        }
+
+        .far.fa-heart {
+            font-size: 37px;
+        }
+    }
+
+    /***************** Le footer : 1000px ********************/
+
+    footer {
+        margin-top: 75px;
+
+        h1 {
+            padding: 45px 45px 35px 45px;
+            font-size: 35px;
+        }
+
+        .list-footer {
+            padding: 0 45px 80px 45px;
+            font-size: 28px;
+            line-height: 45px;
+
+            .list-bold {
+                .fa-utensils {
+                    padding-right: 20px;
+                    font-size: 25px;
+                }
+
+                .fa-hands-helping {
+                    padding-right: 20px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1171px) {
+
+    /****************** Les icônes coeur : 1171px ********************/
+    .heart {
+        .fas.fa-heart {
+            font-size: 32px;
+            top: 2px;
+        }
+
+        .far.fa-heart {
+            font-size: 37px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+
+    /******************** Localisation : 1200px **********************/
+
+    .form {
+        form {
+            .country {
+                font-size: 25px;
+            }
+
+            .fa-map-marker-alt {
+                font-size: 25px;
+            }
+        }
+    }
+
+    /********************** Le texte du header : 1200px *********************/
+    .header-txt {
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 34px;
+        }
+    }
+
+    /******************** Le bouton du header : 1200px **********************/
+    .button-header {
+        span {
+            font-size: 30px;
+        }
+
+        button {
+            padding: 28px 40px 28px 40px;
+        }
+    }
+
+    /********************* Fonctionnement : 1200px ***********************/
+    .color-functioning {
+        .functioning-title {
+            padding-top: 80px;
+            padding-bottom: 60px;
+        }
+    }
+
+    .functioning {
+        min-height: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .elements-functioning {
+            margin: 0 20px 130px 20px;
+            padding: 40px 60px 40px 60px;
+
+            strong {
+                font-size: 26px;
+                transform: translate(-190%, 80%);
+            }
+
+            .fa-mobile-alt {
+                font-size: 35px;
+                padding-bottom: 30px;
+                padding-right: 0;
+            }
+
+            .fa-list-ul {
+                font-size: 35px;
+                padding-bottom: 30px;
+                padding-right: 0;
+            }
+
+            .fa-store {
+                font-size: 35px;
+                padding-bottom: 30px;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .align-button {
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /***************** Restaurants : 1200px *******************/
+    @at-root .restaurant {
+        .restaurant-title {
+            padding: 80px 30px 50px 30px;
+        }
+
+        .links-restaurant {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .bloc-restaurant {
+        margin: 0 30px 35px 30px;
+        width: 44%;
+    }
+
+    /***************** Le footer : 1200px ********************/
+
+    footer {
+        h1 {
+            padding: 45px 50px 35px 50px;
+            font-size: 38px;
+        }
+
+        .list-footer {
+            padding: 0 50px 90px 50px;
+            font-size: 31px;
+            line-height: 50px;
+
+            .list-bold {
+                .fa-utensils {
+                    font-size: 28px;
+                }
+
+                .fa-hands-helping {
+                    font-size: 27px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    /******************** Localisation : 1500px **********************/
+
+    .form {
+        form {
+            .fa-map-marker-alt {
+                left: 39%;
+            }
+        }
+    }
+
+    /******************** Le bouton du header : 1500px **********************/
+    .button-header {
+        span {
+            font-size: 35px;
+        }
+
+        button {
+            padding: 30px 40px 30px 40px;
+        }
+    }
+
+    /********************* Fonctionnement : 1500px ***********************/
+
+    .functioning {
+        min-height: 100px;
+
+        .elements-functioning {
+            margin: 0 20px 130px 20px;
+            padding: 50px 65px 50px 65px;
+        }
+    }
+
+    /***************** Restaurants : 1500px *******************/
+
+    .bloc-restaurant {
+        margin: 0 25px 35px 25px;
+        width: 46%;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+    /********************* Fonctionnement : 1600px ***********************/
+
+    .functioning {
+        .elements-functioning {
+            padding: 60px 80px 60px 80px;
+
+            strong {
+                transform: translate(-240%, 80%);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1800px) {
+
+    /******************** Localisation : 1800px **********************/
+
+    .form {
+        form {
+            .fa-map-marker-alt {
+                left: 40%;
+            }
+        }
+    }
+}
