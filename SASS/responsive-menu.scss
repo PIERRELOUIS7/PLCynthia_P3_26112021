@@ -16,7 +16,7 @@
 
     /***************** Tarif : 400px *****************/
 
-    a:hover .new_price {
+    a:hover .second_price {
         transform: translateX(-20px);
     }
 
@@ -115,9 +115,9 @@
 
     .card {
 
-        .delay-entrees,
-        .delay-meals,
-        .delay-desserts {
+        .plate-entrees,
+        .plate-meals,
+        .plate-desserts {
             a {
                 border-radius: 15px;
 
@@ -131,17 +131,17 @@
 
     /***************** Tarif : 600px *****************/
 
-    a:hover .new_price {
+    a:hover .second_price {
         transform: translateX(-40px);
     }
 
-    a .new_price {
+    a .second_price {
         span {
             font-size: 15px;
         }
     }
 
-    a .new_check {
+    a .following {
         height: 70px;
         width: 60px;
     }
@@ -329,9 +329,9 @@
 
     .card {
 
-        .delay-entrees,
-        .delay-meals,
-        .delay-desserts {
+        .plate-entrees,
+        .plate-meals,
+        .plate-desserts {
             a {
                 border-radius: 20px;
 
@@ -349,17 +349,17 @@
 
     /***************** Tarif : 800px *****************/
 
-    a:hover .new_price {
+    a:hover .second_price {
         transform: translateX(-100px);
     }
 
-    a .new_price {
+    a .second_price {
         span {
             font-size: 20px;
         }
     }
 
-    a .new_check {
+    a .following {
         height: 90px;
     }
 
@@ -452,9 +452,9 @@
 
     .card {
 
-        .delay-entrees,
-        .delay-meals,
-        .delay-desserts {
+        .plate-entrees,
+        .plate-meals,
+        .plate-desserts {
             a {
                 margin: 0 25px 25px 25px;
                 border-radius: 25px;
@@ -469,11 +469,11 @@
 
     /***************** Tarif : 1000px *****************/
 
-    a:hover .new_price {
+    a:hover .second_price {
         transform: translateX(-190px);
     }
 
-    a .new_price {
+    a .second_price {
         span {
             font-size: 28px;
         }
@@ -483,7 +483,7 @@
         right: -100px;
     }
 
-    a .new_check {
+    a .following {
         height: 110px;
     }
 
@@ -606,9 +606,9 @@
 
     .card {
 
-        .delay-entrees,
-        .delay-meals,
-        .delay-desserts {
+        .plate-entrees,
+        .plate-meals,
+        .plate-desserts {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -636,7 +636,7 @@
 
     /***************** Tarif : 1400px *****************/
 
-    a:hover .new_price {
+    a:hover .second_price {
         transform: translateX(-10px);
     }
 
@@ -680,9 +680,9 @@
         padding-left: 10px;
         padding-right: 10px;
 
-        .delay-entrees,
-        .delay-meals,
-        .delay-desserts {
+        .plate-entrees,
+        .plate-meals,
+        .plate-desserts {
             a {
                 p {
                     padding: 0 23px 14px 23px;
@@ -701,7 +701,7 @@
 
     /***************** Tarif : 1000px *****************/
 
-    a .new_check {
+    a .following {
         height: 130px;
     }
 }
@@ -716,9 +716,9 @@
 
     .card {
 
-        .delay-entrees,
-        .delay-meals,
-        .delay-desserts {
+        .plate-entrees,
+        .plate-meals,
+        .plate-desserts {
             p {
                 width: 70%;
             }
