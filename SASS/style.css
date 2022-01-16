@@ -17,7 +17,8 @@ body {
       transition: coeur
 \****************************/
 /*div des 2 icônes coeur de la page d'accueil*/
-.heart {
+.coeur {
+  /*heart*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +33,7 @@ body {
   /*Icône de coeur vide*/
 }
 
-.heart .fas.fa-heart {
+.coeur .fas.fa-heart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +48,7 @@ body {
   bottom: 0;
 }
 
-.heart .far.fa-heart {
+.coeur .far.fa-heart {
   position: absolute;
   font-size: 21px;
   color: black;
@@ -475,7 +476,7 @@ Le header
 
 /****Le bouton****/
 /*Le 1er bouton du header*/
-.button-rechearch {
+.button-research {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,13 +487,13 @@ Le header
   /*Le bouton à l'intérieur de la class button-header*/
 }
 
-.button-rechearch span {
+.button-research span {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: normal;
 }
 
-.button-rechearch button {
+.button-research button {
   padding: 12px 22px 12px 22px;
   border-radius: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
@@ -507,7 +508,7 @@ Le header
   opacity: 0.7;
 }
 
-.button-rechearch button:hover {
+.button-research button:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#eeb6de), to(#b089e0));
   background: linear-gradient(to bottom, #eeb6de, #b089e0);
   -webkit-box-shadow: 5px 5px 5px #B5B6B9;
@@ -1135,7 +1136,6 @@ a .right {
 }
 
 a .right div {
-  width: 50px;
   text-align: center;
 }
 
@@ -1153,7 +1153,10 @@ a .following {
   top: 0;
   bottom: 0;
   border-radius: 0 11px 11px 0;
-  position: absolute;
+  width: 50px;
+  /*ajouté*/
+  height: 50px;
+  /*ajouté*/
 }
 
 /*Tarif*/
@@ -1162,18 +1165,13 @@ a .second_price span {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   color: black;
-  font-size: 12px;
-  padding-right: 15px;
+  font-size: 15px;
+  padding-right: 16px;
 }
 
 a .following i {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-
-a:hover .second_price {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
 }
 
 a:hover .following i {

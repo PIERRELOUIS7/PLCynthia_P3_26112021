@@ -71,14 +71,10 @@
     font-size: 17px;
     padding: 10px 10px 3px 10px;
   }
-  .card .plate-entrees a,
-  .card .plate-meals a,
-  .card .plate-desserts a {
+  .card .plate-entrees a, .card .plate-meals a, .card .plate-desserts a {
     border-radius: 15px;
   }
-  .card .plate-entrees a p,
-  .card .plate-meals a p,
-  .card .plate-desserts a p {
+  .card .plate-entrees a p, .card .plate-meals a p, .card .plate-desserts a p {
     font-size: 15px;
     padding: 0 11px 10px 11px;
   }
@@ -222,14 +218,10 @@
     font-size: 22px;
     padding: 15px 12px 6px 12px;
   }
-  .card .plate-entrees a,
-  .card .plate-meals a,
-  .card .plate-desserts a {
+  .card .plate-entrees a, .card .plate-meals a, .card .plate-desserts a {
     border-radius: 20px;
   }
-  .card .plate-entrees a p,
-  .card .plate-meals a p,
-  .card .plate-desserts a p {
+  .card .plate-entrees a p, .card .plate-meals a p, .card .plate-desserts a p {
     font-size: 20px;
     padding: 0 12px 10px 12px;
   }
@@ -307,15 +299,11 @@
     font-size: 30px;
     padding: 17px 20px 8px 20px;
   }
-  .card .plate-entrees a,
-  .card .plate-meals a,
-  .card .plate-desserts a {
+  .card .plate-entrees a, .card .plate-meals a, .card .plate-desserts a {
     margin: 0 25px 25px 25px;
     border-radius: 25px;
   }
-  .card .plate-entrees a p,
-  .card .plate-meals a p,
-  .card .plate-desserts a p {
+  .card .plate-entrees a p, .card .plate-meals a p, .card .plate-desserts a p {
     font-size: 28px;
     padding: 0 20px 14px 20px;
   }
@@ -417,9 +405,7 @@
   h4 {
     width: 60%;
   }
-  .card .plate-entrees,
-  .card .plate-meals,
-  .card .plate-desserts {
+  .card .plate-entrees, .card .plate-meals, .card .plate-desserts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -431,15 +417,11 @@
         flex-wrap: nowrap;
     padding: 0 10px 0 10px;
   }
-  .card .plate-entrees a,
-  .card .plate-meals a,
-  .card .plate-desserts a {
+  .card .plate-entrees a, .card .plate-meals a, .card .plate-desserts a {
     width: 70%;
     margin: 15px;
   }
-  .card .plate-entrees p,
-  .card .plate-meals p,
-  .card .plate-desserts p {
+  .card .plate-entrees p, .card .plate-meals p, .card .plate-desserts p {
     width: 60%;
   }
   /****************** coches : 1400px *********************/
@@ -485,9 +467,7 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  .card .plate-entrees a p,
-  .card .plate-meals a p,
-  .card .plate-desserts a p {
+  .card .plate-entrees a p, .card .plate-meals a p, .card .plate-desserts a p {
     padding: 0 23px 14px 23px;
   }
   /*************** icônes de coeur : 1600px ******************/
@@ -507,9 +487,7 @@
   h4 {
     width: 70%;
   }
-  .card .plate-entrees p,
-  .card .plate-meals p,
-  .card .plate-desserts p {
+  .card .plate-entrees p, .card .plate-meals p, .card .plate-desserts p {
     width: 70%;
   }
 }

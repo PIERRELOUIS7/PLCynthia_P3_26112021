@@ -35,7 +35,7 @@ body {
       transition: coeur
 \****************************/
 /*div des 2 icônes coeur de la page d'accueil*/
-.heart {
+.coeur { /*heart*/
   display: flex;
   justify-content: flex-end;
   padding-bottom: 15px;
@@ -363,7 +363,7 @@ Le header
 /****Le bouton****/
 
 /*Le 1er bouton du header*/
-.button-rechearch {
+.button-research { 
   display: flex;
   justify-content: center;
   padding-bottom: 47px;
@@ -836,7 +836,6 @@ a .right {
   align-items: center;
 }
 a .right div {
-  width: 50px;
   text-align: center;
 }
 a .following {
@@ -847,7 +846,8 @@ a .following {
   top: 0;
   bottom: 0;
   border-radius: 0 11px 11px 0;
-  position: absolute; 
+  width: 50px; /*ajouté*/
+  height: 50px; /*ajouté*/
 }
 /*Tarif*/
 a .second_price {
@@ -856,16 +856,14 @@ a .second_price {
     font-family: $police-second;
     font-style: normal;
     color: black;
-    font-size: 12px;
-    padding-right: 15px;
+    font-size: 15px;
+    padding-right: 16px;
   }
 }
 a .following i {
   transition: all 0.5s ease;
 }
-a:hover .second_price {
-  transform: translateX(-50px);
-}
+
 a:hover .following i {
   transform: rotate(-360deg);
 }
