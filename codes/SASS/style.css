@@ -151,11 +151,13 @@ body {
   }
   55% {
     -webkit-transform: scale(55%);
+            transform: scale(55%);
     color: #FF79DA;
     opacity: .7;
   }
   100% {
     -webkit-transform: scale(100%);
+            transform: scale(100%);
     color: #FF79DA;
     opacity: 1;
   }
@@ -573,7 +575,7 @@ Le contenu : les grands blocs
 }
 
 .fonctionnement .bloc-fonctionnement:hover {
-  color: -o-linear-gradient(to bottom, #ff79da, #9356dc);
+  color: linear-gradient(to bottom, #ff79da, #9356dc);
 }
 
 .fonctionnement .bloc-fonctionnement strong {

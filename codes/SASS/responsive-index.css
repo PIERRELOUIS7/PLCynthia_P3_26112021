@@ -104,11 +104,11 @@
     padding: 0 12px 15px 12px;
   }
   /***************** Les icônes coeur : 400px ******************/
-  .heart {
+  .coeur {
     padding-right: 25px;
     padding-left: 25px;
   }
-  .heart .fas.fa-heart {
+  .coeur .fas.fa-heart {
     font-size: 18px;
   }
   /***************** Le footer : 400px ********************/
@@ -205,7 +205,7 @@
     padding: 0 15px 17px 15px;
   }
   /*************** Les icônes coeur : 500px *****************/
-  .heart {
+  .coeur {
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -319,11 +319,11 @@
     padding: 0 18px 20px 18px;
   }
   /***************** Les icônes coeur : 650px *******************/
-  .heart .fas.fa-heart {
+  .coeur .fas.fa-heart {
     font-size: 22px;
     top: 2px;
   }
-  .heart .far.fa-heart {
+  .coeur .far.fa-heart {
     font-size: 26px;
   }
   /***************** Le footer : 650px ********************/
@@ -453,15 +453,15 @@
     padding: 0 25px 30px 25px;
   }
   /***************** Les icônes coeur : 750px *******************/
-  .heart {
+  .coeur {
     padding-right: 40px;
     padding-left: 40px;
   }
-  .heart .fas.fa-heart {
+  .coeur .fas.fa-heart {
     font-size: 27px;
     top: 1px;
   }
-  .heart .far.fa-heart {
+  .coeur .far.fa-heart {
     font-size: 31px;
   }
   /***************** Le footer : 750px ********************/
@@ -578,10 +578,10 @@
     font-size: 32px;
   }
   /************** Les icônes coeur : 1000px ******************/
-  .heart .fas.fa-heart {
+  .coeur .fas.fa-heart {
     font-size: 32px;
   }
-  .heart .far.fa-heart {
+  .coeur .far.fa-heart {
     font-size: 37px;
   }
   /***************** Le footer : 1000px ********************/
@@ -609,11 +609,11 @@
 
 @media screen and (min-width: 1171px) {
   /****************** Les icônes coeur : 1171px ********************/
-  .heart .fas.fa-heart {
+  .coeur .fas.fa-heart {
     font-size: 32px;
     top: 2px;
   }
-  .heart .far.fa-heart {
+  .coeur .far.fa-heart {
     font-size: 37px;
   }
 }

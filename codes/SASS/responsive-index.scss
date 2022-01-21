@@ -104,7 +104,7 @@
     }
 
     /***************** Restaurants : 400px *******************/
-    @at-root .restaurant {
+    .restaurant {
         .restaurant-title {
             padding: 45px 20px 20px 20px;
             font-size: 21px;
@@ -144,7 +144,7 @@
 
     /***************** Les icônes coeur : 400px ******************/
 
-    .heart {
+    .coeur {
         padding-right: 25px;
         padding-left: 25px;
 
@@ -256,7 +256,7 @@
     }
 
     /***************** Restaurants : 500px *******************/
-    @at-root .restaurant {
+    .restaurant {
         .restaurant-title {
             padding: 50px 20px 20px 25px;
             font-size: 23px;
@@ -294,7 +294,7 @@
 
     /*************** Les icônes coeur : 500px *****************/
 
-    .heart {
+    .coeur {
         padding-right: 30px;
         padding-left: 30px;
     }
@@ -413,7 +413,7 @@
     }
 
     /***************** Restaurants : 650px *******************/
-    @at-root .restaurant {
+    .restaurant {
         .restaurant-title {
             padding: 50px 20px 25px 20px;
             font-size: 26px;
@@ -458,7 +458,7 @@
 
     /***************** Les icônes coeur : 650px *******************/
 
-    .heart {
+    .coeur {
         .fas.fa-heart {
             font-size: 22px;
             top: 2px;
@@ -600,7 +600,7 @@
     }
 
     /***************** Restaurants : 750px *******************/
-    @at-root .restaurant {
+    .restaurant {
         .restaurant-title {
             padding: 60px 25px 30px 25px;
             font-size: 31px;
@@ -645,7 +645,7 @@
 
     /***************** Les icônes coeur : 750px *******************/
 
-    .heart {
+    .coeur {
         padding-right: 40px;
         padding-left: 40px;
 
@@ -780,7 +780,7 @@
     }
 
     /***************** Restaurants : 1000px *******************/
-    @at-root .restaurant {
+    .restaurant {
         .restaurant-title {
             padding: 70px 30px 35px 30px;
             font-size: 36px;
@@ -819,7 +819,7 @@
 
     /************** Les icônes coeur : 1000px ******************/
 
-    .heart {
+    .coeur {
         .fas.fa-heart {
             font-size: 32px;
         }
@@ -862,7 +862,7 @@
 @media screen and (min-width: 1171px) {
 
     /****************** Les icônes coeur : 1171px ********************/
-    .heart {
+    .coeur {
         .fas.fa-heart {
             font-size: 32px;
             top: 2px;
@@ -966,7 +966,7 @@
     }
 
     /***************** Restaurants : 1200px *******************/
-    @at-root .restaurant {
+    .restaurant {
         .restaurant-title {
             padding: 80px 30px 50px 30px;
         }
